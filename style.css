@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --orange: #F2C14E;
     --winning-blocks: #2d414b;
-}
+} */
 
 body {
-    color: var(--orange);
+    color: #F2C14E;
     font-family: 'Finger Paint', cursive;
 }
 h1 {
-    font-size: 54px;
+    font-size: 70px;
     text-transform: uppercase;
 }
 
@@ -25,14 +25,25 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #37505C;
+    background: #00cec9
+    
 }
-
 #gameboard {
     width: 300px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 .box {
     height: 100px;
@@ -40,28 +51,18 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--orange);
+    color: #F2C14E;
     font-size: 120px;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    border-right: 8px solid;
+    border-bottom: 8px solid;
 }
-.box:nth-child(3n) {
-    border-right: none;
-}
-.box:nth-child(6) ~ .box {
-    border-bottom: none;
-} 
 button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: var(--orange);
+    background-color: #F2C14E;
     color: #333;
-    border-color: var(--orange);
+    border-color: #F2C14E;
     font-size: 18px;
     transition: 200ms transform;
     font-weight: 600;
-}
-button:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
 }
