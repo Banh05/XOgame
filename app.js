@@ -2,7 +2,7 @@ let playerText = document.getElementById('playerText')
 let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
 
-let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
+let winnerIndicator = getComputedStyle(document.body).getPropertyValue('#2d414b')
 
 const O_TEXT = "O"
 const X_TEXT = "X"
